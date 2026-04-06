@@ -224,27 +224,3 @@ SisCatLaMP/
 ├── requirements.txt     # Dependências Python
 └── build_exe.bat        # Script de build do executável Windows
 ```
-
----
-
-## Solução de problemas
-
-**Conflito "only one bot instance is running"**
-- Outra instância do bot já está rodando (outro terminal ou processo em background)
-- Encerre todos os processos Python e reinicie: `taskkill /F /IM python.exe`
-
-**Erro 429 no Gemini (cota excedida)**
-- O free tier permite 1.500 req/dia com `gemini-2.0-flash`
-- Acesse o Dashboard → Configurações → mude o Provedor para **OpenAI**
-
-**OpenAI 401 Unauthorized**
-- A `OPENAI_API_KEY` está incorreta ou não configurada
-- Acesse o Dashboard → Configurações → atualize a chave
-
-**FFmpeg não encontrado**
-- Dashboard → Configurações → clique em **Baixar automaticamente**
-- Ou instale manualmente e adicione ao PATH do Windows
-
-**Áudio não transcrito**
-- O modelo Whisper é baixado na primeira execução (~74 MB)
-- Se a máquina não tiver internet, copie a pasta `models\whisper\` manualmente
