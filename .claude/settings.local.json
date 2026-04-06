@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find C:UsersNacarattiDesktopSisCatLaMP -maxdepth 2 -type f -name *.json -o -name *.md -o -name Makefile -o -name *.toml -o -name *.yaml -o -name *.yml)",
+      "Bash(\"venv/Scripts/python.exe\" -m py_compile ai_agent.py bot_handlers.py)",
+      "Bash(git push:*)",
+      "Bash(git config:*)"
+    ]
+  }
+}
