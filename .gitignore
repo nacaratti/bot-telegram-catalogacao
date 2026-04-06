@@ -1,9 +1,21 @@
 venv/
 .venv/
+env/
 models/
 build/
 dist/
 __pycache__/
+*.py[cod]
 *.db
 *.spec
 .env
+.env.*
+!.env.example
+
+# Media gerada em runtime
+media/fotos/
+media/audio_tmp/
+
+# Imagens locais
+image.png
+logo.ico
